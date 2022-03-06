@@ -11,10 +11,10 @@ const app = new Vue({
         .get('https://flynn.boolean.careers/exercises/api/random/mail')
         .then((response) => {
           this.randomMail = response.data.response;
-          //console.log(this.randomMail);
+          console.log(this.randomMail);
           if (!this.listRandomMail.includes(this.randomMail)) {
             this.listRandomMail.push(this.randomMail);
-            //console.log(this.listRandomMail);
+            console.log(this.listRandomMail);
           }
         });
 
